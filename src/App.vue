@@ -43,6 +43,9 @@
     <h2>Votre tringle a été ajouter au panier.</h2>
     <button v-on:click="step = 'step0'; price = 0; price1 = 0; price2 = 0;">Acheter une nouvelle tringle ?</button>
   </div>
+  <div>
+    <Axios/>
+  </div>
 </template>
 
 <script>
@@ -50,6 +53,7 @@ import Image from "./components/Image.vue";
 import Dimension from "./components/Dimension.vue";
 import Modele from "./components/Modele.vue";
 import Valider from "./components/Valider.vue";
+import Axios from "./components/Axios.vue";
 
 export default {
   name: "App",
@@ -58,6 +62,7 @@ export default {
     Dimension,
     Modele,
     Valider,
+    Axios,
   },
   data() {
     return {
